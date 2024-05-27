@@ -12,3 +12,4 @@ Write an Ansible playbok to automate the configuration of a web server, and depl
 #### move your html file to the **/var/www/html**
 
 ## 3- check the sample website at **localhost:80**
+<img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/825ce859-dcac-4bb5-bcc3-8cd73fd9008a">
