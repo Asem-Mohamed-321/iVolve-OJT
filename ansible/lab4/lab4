@@ -1,0 +1,17 @@
+sudo apt install openssh-server #install openssh
+systemctl status ssh		#start ssh service
+sudo ufw allow ssh		#allow ssh on the firewall
+
+sudo apt install ansible-core	#install ansible on your control node
+
+vim inventory 			#configure your managed hosts
+vim ansible.cfg			#default ansible configurations
+
+
+ssh-keygen			#generating an ssh key
+ssh-copy-id asem@192.168.106.132    #copy the key id
+ssh asem@192.168.106.132	#test the ssh connection
+exit				#exit the ssh connection
+
+
+ansible all -m file -a "name=file11 state=touch" -i ./inventory   #creating a file named file11 on the managed hosts

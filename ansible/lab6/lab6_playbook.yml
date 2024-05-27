@@ -1,0 +1,37 @@
+---
+- name: lab6
+  hosts: all
+  become: true
+  vars_files:
+    - vault.yml
+  vars:
+    database_name: new_database
+
+  tasks:
+  
+    - name : install mysql
+      apt:
+        name: mysql-server
+        state: present
+
+    - name: enable mysql service
+      service:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: creating a database at mysql
+      shell:
+        mysql -u root -p{{ vault_mysql_root_password }} -e "CREATE DATABASE IF NOT EXISTS {{ database_name }};"
+
+    - name: creat a mysql user
+      shell:
+        mysql -u root -p{{ vault_mysql_root_password }} -e "CREATE USER '{{ vault_mysql_user }}'@'localhost' IDENTIFIED BY '{{ vault_mysql_password }}';"
+
+
+      
+    - name : grant permission to the user
+      shell:
+        mysql -u root -p{{ vault_mysql_root_password }} -e "GRANT ALL PRIVILEGES ON {{ database_name }}.* TO '{{ vault_mysql_user }}'@'localhost'; FLUSH PRIVILEGES;"
+
+
