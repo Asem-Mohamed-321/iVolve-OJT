@@ -1,4 +1,4 @@
-## Lab5:e
+## Lab5:
 Write an Ansible playbok to automate the configuration of a web server, and deploty a sample website.
 
 ## Steps:
