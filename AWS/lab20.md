@@ -7,7 +7,6 @@
 <img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/36045293-3eda-428a-817b-a29db16ea26f">
 
 ### - Create internet gateway for the vpc:
-<img src="">
 <img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/3fe080e8-8fb1-44ac-80f4-7a069e2eb39f">
 
 ### - Create security group for ssh trafic:
