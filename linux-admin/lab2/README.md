@@ -19,6 +19,11 @@ AuthPass= < enter the App Password you make using Google account managment for e
 ### - write your bash script 
 <img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/e4bac6da-779e-4cbf-8d75-3a98675a20a6">
 
+### - enable your file to be excuted 
+```
+chmod 777 lab.sh
+```
+
 ### - run the script 
 ```
 . lab.sh
