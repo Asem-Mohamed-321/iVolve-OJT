@@ -1,0 +1,12 @@
+---
+# tasks file for os_role
+- name : download and extract openshift cli
+  shell : curl -L https://mirror.openshift.com/pub/openshift-v4/clients/oc/latest/linux/oc.tar.gz | tar -xz -C /usr/local/bin  oc
+  args:
+    creates: /usr/local/bin/oc
+
+- name : ensure oc binary is excutable
+  become: true
+  file : 
+    path : /usr/local/bin/oc
+    mode : '0755'
