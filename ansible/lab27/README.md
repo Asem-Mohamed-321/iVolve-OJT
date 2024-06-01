@@ -79,7 +79,7 @@ vars/main.yml: Variables for the role.
 tests/: Test inventory and test playbook for the role.
 
 ### - In the role/tasks/main.tf write the plays related to this role 
-<img src="">
+
 for docker role :
 <img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/95e9fca4-f518-4cd6-90ba-2d71b71d0c9d">
 
