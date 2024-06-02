@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-lab6
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath:  /usr/share/nginx/html
+          name: volume
+      volumes :
+      - name : volume
+        persistentVolumeClaim:
+          claimName: pvc
+
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                
