@@ -21,3 +21,13 @@ kubectl apply -f ResourceQouta.yml
 
 ##### Create the deployment
 <img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/f3675de5-8e2f-4fed-96af-b9c653007a38">
+
+##### Apply the files to the cluster 
+```
+kubectl apply -f configmap.yaml
+kubectl apply -f secret.yml
+kubectl apply -f deployment.yml
+```
+
+### - Exec into the MySQL pod and verify the MySQL configuration: 
+<img src=https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/da29ba9a-9ec8-4524-84f9-efa5af0726ef">
