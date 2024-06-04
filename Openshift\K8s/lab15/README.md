@@ -9,3 +9,9 @@ check that pod is deployed
 
 ### - taint the minikube node with your value:
 <img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/cf2a4d32-ecf0-46fd-9c72-a244a8e411f8">
+
+### - Creat pod yaml file with the wrong tolarent and check its status:
+<img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/85630dcf-51fc-4e32-a60d-98fbe7c9ac8d">
+
+note the pod stays in pending state and never goes in the running state
+<img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/55a80ee2-0863-4003-ab4b-608a1ea1a807">
