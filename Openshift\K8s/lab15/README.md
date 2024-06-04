@@ -1,0 +1,11 @@
+### - Create the demonset yaml file:
+<img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/fd44ccbb-6a68-4b0f-884c-c2ac668d6e3f">
+
+```
+kubectl apply -f demonset.yml
+```
+check that pod is deployed
+<img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/eb3a74eb-bae0-4251-a526-bf466cf3f370">
+
+### - taint the minikube node with your value:
+<img src="https://github.com/Asem-Mohamed-321/iVolve-OJT/assets/167926594/cf2a4d32-ecf0-46fd-9c72-a244a8e411f8">
